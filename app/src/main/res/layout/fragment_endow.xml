@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.EndowFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/pink"
+        android:layout_height="?attr/actionBarSize">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="@drawable/background_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:background="@drawable/custom_rect_white_rad_10"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_height="match_parent"
+                android:layout_weight="7">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:text="Nhập mã"
+                     android:textColor="@color/black"
+                     android:gravity="center_vertical"
+                     android:textStyle="bold"/>
+                <EditText
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Giới thiệu, ưu đãi"
+                    android:paddingLeft="@dimen/_10sdp"/>
+            </LinearLayout>
+            <Button
+                android:background="@color/transparent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:drawableLeft="@drawable/ic_gif"
+                android:text="Quà tặng"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tìm kiếm"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/custom_rect_gray_rad_10"
+        android:layout_margin="@dimen/_10sdp"
+        android:drawableLeft="@drawable/ic_search"/>
+      <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvItemMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THƯƠNG HIỆU NỔI BẬT"
+        android:textColor="@color/black"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ƯU ĐÃI ĐẶC BIỆT"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18sdp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSpecialOffer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ƯU ĐÃI BÁN CHẠY"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18sdp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSellingDeals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TẤT CẢ ƯU ĐÃI"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18sdp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProductAll"
+                android:nestedScrollingEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+      </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

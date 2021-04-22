@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/_20sdp"
+    android:elevation="@dimen/_20sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_width="@dimen/_170sdp"
+    android:layout_height="@dimen/_100sdp"
+    tools:ignore="UnusedAttribute">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bank_links" />
+
+        <TextView
+            android:id="@+id/txtNameBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Passio Coffe"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/imgBrand"
+            app:layout_constraintTop_toTopOf="@+id/imgBrand" />
+
+        <TextView
+            android:id="@+id/txtEndow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 ưu đãi"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBrand"
+            app:layout_constraintStart_toStartOf="@+id/txtNameBrand" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

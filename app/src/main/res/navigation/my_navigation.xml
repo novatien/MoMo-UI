@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/momoFragment">
+
+    <fragment
+        android:id="@+id/momoFragment"
+        android:name="com.notin.momotest.ui.fragment.MoMoFragment"
+        android:label="fragment_momo"
+        tools:layout="@layout/fragment_momo" />
+    <fragment
+        android:id="@+id/endowFragment"
+        android:name="com.notin.momotest.ui.fragment.EndowFragment"
+        android:label="fragment_endow"
+        tools:layout="@layout/fragment_endow" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.notin.momotest.ui.fragment.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/friendFragment"
+        android:name="com.notin.momotest.ui.fragment.FriendFragment"
+        android:label="fragment_friend"
+        tools:layout="@layout/fragment_friend" />
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="com.notin.momotest.ui.fragment.WalletFragment"
+        android:label="fragment_wallet"
+        tools:layout="@layout/fragment_wallet" />
+</navigation>

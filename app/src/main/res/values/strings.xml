@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MoMoTest</string>
+    <string name="lb_enter_phone">Nhập số điện thoại</string>
+    <string name="lb_use_phone_register">Dùng số điện thoại để đăng ký hoặc \n đăng nhập ví MoMo</string>
+    <string name="hint_enter_phone">Nhập số điện thoại</string>
+    <string name="btn_continue">TIẾP TỤC</string>
+    <string name="not_enter_phone">Vui lòng nhập số điện thoại</string>
+    <string name="phone_number_incorrect">Số điện thoại không đúng</string>
+    <string name="you_entered">Bạn đã nhập</string>
+    <string name="toast_submit_phone">Chúng tôi sẽ thông báo mã xác thực qua tổng đài tự động của MoMo 0287306 555 tới số điện thoại này. Bạn có muốn tiếp tục</string>
+    <string name="text_no">KHÔNG</string>
+    <string name="text_call_me">GỌI CHO TÔI</string>
+    <string name="text_accuracy">Xác thực OTP</string>
+    <string name="content_accuaracy">Một mã xác thực được gửi đến\n</string>
+    <string name="hint_accuaracy">Mã xác thực</string>
+    <string name="rules">Bằng việc bấm "Tiếp tục", bạn xác nhận đã đọc và đồng ý với Điều khoản sử dụng của ví MoMo.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

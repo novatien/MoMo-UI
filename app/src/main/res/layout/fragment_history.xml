@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.HistoryFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/pink"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Lịch sử giao dịch"
+            android:gravity="center"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/white"/>
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:src="@drawable/banner_ads1"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="@dimen/_80sdp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="wrap_content"
+            android:hint="Tìm kiếm giao dịch"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/custom_rect_gray_rad_10"
+            android:layout_margin="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_search"/>
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:text="Bộ lọc"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_filter"
+            android:gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/history"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn chưa có giao dịch nào"
+        android:textSize="@dimen/_14sdp"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:text="Liên kết ví với tài khoản ngân hàng ngay và tận hưởng vô vàn ưu đãi từ MoMo nhé!"
+        android:textSize="@dimen/_14sdp"
+        android:gravity="center"
+        android:textColor="#222222" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:text="LIÊN KẾT NGAY"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:backgroundTint="#a60064" />
+
+
+
+
+
+</LinearLayout>

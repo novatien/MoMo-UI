@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/momoFragment"
+      android:title="MoMo"
+      android:icon="@drawable/momo" />
+    <item android:id="@+id/endowFragment"
+        android:title="ƯU ĐÃI"
+        android:icon="@drawable/ic_promotions"
+        />
+    <item android:id="@+id/historyFragment"
+        android:title="LỊCH SỬ GD"
+        android:icon="@drawable/ic_history"
+        />
+    <item android:id="@+id/friendFragment"
+        android:title="BẠN BÈ"
+        android:icon="@drawable/ic_comment"
+        />
+    <item android:id="@+id/walletFragment"
+        android:title="VÍ CỦA TÔI"
+        android:icon="@drawable/ic_avatar"
+        />
+</menu>
